@@ -1,0 +1,28 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<div class="test-center">
+<div class=" mt-5 allign-middle">
+ <div class="text-center" >
+   <img style=" display:block margin-left:auto margin-right:auto" src="{% static 'core/images/pic1.jpg' %}" alt="profilepic" class="img-thumbnail" 
+     width="250px" height='150px'>
+  </div>
+  <div class="mt-5 text-white mx-5 text-justify">
+     <h1 class="font-weight-bold st-font">Hello,</h1>
+
+    <div class="px-4" style="line-height:2rem">
+      <p style="text-indent:100px;"> I AM <b class="text-warning">Ashutosh Acharya. </b> I AM A BTECH GRADUATE 
+      (ELECTRONIC COMMUNICATION ENGINEERING) 
+      WITH AN INTEREST IN <b class="text-warning">‘’ Python/DJANGO DEVELOPER ‘’</b>.
+       PUNCTUAL WITH A DESIRE TO IMPROVE AND APPLY   MY KNOWLEDGE, 
+       SKILLS AND ABILITIES TO CONTRIBUTE THE GROWTH OF THE ORGANISATION, 
+       AS WELL ENHANCE MY PROFESSIONAL CAREER. IMPACT MOTIVATES ME MORE THAN ANYTHING ELSE.</p>
+    </div>
+  </div>
+  <div class="text-center">
+  <a href=" {% url 'contact' %} " class="btn btn-outline-warning  my-3 mr-5">Hire Me</a>
+  <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+  </div>
+</div>
+</div>
+{% endblock content %}
